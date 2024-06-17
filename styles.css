@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.conteudo {
+  width: calc(100% - 40px); 
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#form-biblioteca {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: calc(100% - 12px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+button[type="reset"] {
+  background-color: #ccc;
+  color: black;
+}
+
+button[type="reset"]:hover {
+  background-color: #999;
+}
+
+table {
+  width: 100%;
+  background-color: white;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+#tabela-biblioteca th {
+  background-color: #333;
+  color: white;
+}
+
+#tabela-biblioteca button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#tabela-biblioteca button:hover {
+  background-color: #45a049;
+}
+
+.highlight {
+  background-color: #ffeeba !important;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="button"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+button[type="button"]:hover {
+  background-color: #555;
+}
