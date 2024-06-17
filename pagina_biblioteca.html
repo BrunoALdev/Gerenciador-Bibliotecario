@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador Bibliotecário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 style="text-align: left; margin-left: 20px;">Gerenciador Bibliotecário</h1>
+    </header>
+
+    <main>
+        <div class="conteudo">
+            <form id="form-biblioteca">
+                <div class="form-group">
+                    <label for="livro">Livro:</label>
+                    <input type="text" id="livro" name="livro" required>
+                </div>
+                <div class="form-group">
+                    <label for="isbn">ISBN:</label>
+                    <input type="text" id="isbn" name="isbn" required>
+                </div>
+                <div class="form-group">
+                    <label for="status">Status:</label>
+                    <select id="status" name="status" required>
+                        <option value="disponivel">Disponível</option>
+                        <option value="emprestado">Emprestado</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nome-leitor">Nome do Leitor:</label>
+                    <input type="text" id="nome-leitor" name="nome-leitor" required>
+                </div>
+                <div class="form-group">
+                    <label for="cpf-leitor">CPF do Leitor:</label>
+                    <input type="text" id="cpf-leitor" name="cpf-leitor" required>
+                </div>
+                <div class="form-group">
+                    <label for="data-emprestimo">Data de Empréstimo:</label>
+                    <input type="date" id="data-emprestimo" name="data-emprestimo" required>
+                </div>
+                <div class="form-group">
+                    <label for="data-devolucao">Data de Devolução:</label>
+                    <input type="date" id="data-devolucao" name="data-devolucao" required>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" onclick="adicionarRegistro(event)">Salvar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="conteudo">
+            <input type="text" id="input-busca" placeholder="Buscar...">
+            <table id="tabela-biblioteca">
+                <thead>
+                    <tr>
+                        <th>Livro</th>
+                        <th>ISBN</th>
+                        <th>Status</th>
+                        <th>Nome do Leitor</th>
+                        <th>CPF do Leitor</th>
+                        <th>Data de Empréstimo</th>
+                        <th>Data de Devolução</th>
+                        <th>Devolver</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Aqui vai o rodapé da página -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
