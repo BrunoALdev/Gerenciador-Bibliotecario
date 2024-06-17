@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>Gerenciador Bibliotecário</h1>
+</div>
+
+<div class="login-container">
+    <h2>Login</h2>
+    <form class="login-form" onsubmit="return loginUser(event)">
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Entrar">
+    </form>
+
+    <div class="signup-link">
+        <a href="javascript:void(0);" onclick="showSignupForm()">Criar uma nova conta</a>
+    </div>
+
+    <div id="signup-container" class="signup-container">
+        <h2>Cadastro</h2>
+        <form class="signup-form" onsubmit="return registerUser(event)">
+            <label for="nome_completo">Nome Completo:</label>
+            <input type="text" id="nome_completo" name="nome_completo" required>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <input type="submit" value="Cadastrar">
+        </form>
+    </div>
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>
